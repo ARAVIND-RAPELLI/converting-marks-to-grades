@@ -11,34 +11,34 @@ int main()
     scanf("%d",&marks);
 
     /* Find grade according to the marks */
-    if(marks>= 90)
+    if(marks<=100)
+        
     {
-        printf("Grade O"); /*outstanding*/
-    }
-    else if(marks >= 80)
+    if(marks>= 85)
     {
-        printf("Your Grade is A");
+        printf("Grade A");
     }
     else if(marks >= 70)
     {
         printf("Your Grade is B");
     }
-    else if(marks >= 60)
+    else if(marks >= 55)
     {
         printf("Your Grade is C");
     }
-    else if(marks >= 50)
-    {
-        printf("Your Grade is D");
-    }
      else if(marks >= 40)
     {
-        printf("Your Grade is E");
+        printf("Your Grade is D");
     }
     else
     {
         printf("Your Grade is F");
     }
-
+        
+    }
+    else
+    {
+         printf("invaild choice");
+    }
     return 0;
 }
